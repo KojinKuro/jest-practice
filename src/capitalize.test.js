@@ -10,4 +10,9 @@ describe("Capitalize test", () => {
     let name = "bob";
     expect(capitalize(name)).toBe("Bob");
   });
+
+  it("Can handle numbers", () => {
+    let name = "1roboBob";
+    expect(capitalize(name)).toBe("1roboBob");
+  });
 });
