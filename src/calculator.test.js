@@ -10,4 +10,14 @@ describe("Calculator Tests", () => {
       expect(calc.add(3, -10)).toBe(-7);
     });
   });
+
+  describe("Subtract tests", () => {
+    it("Will minus 1 - 1", () => {
+      expect(calc.subtract(1, 1)).toBe(0);
+    });
+
+    it("Will minus 10 - -1", () => {
+      expect(calc.subtract(10, -1)).toBe(11);
+    });
+  });
 });
