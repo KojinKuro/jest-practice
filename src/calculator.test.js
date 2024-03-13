@@ -36,4 +36,19 @@ describe("Calculator Tests", () => {
       expect(calc.divide(10, 0)).toBe(Infinity);
     });
   });
+
+  describe("Multiplication Tests", () => {
+    it("Will multiply two numbers together", () => {
+      expect(calc.multiply(3, 4)).toBe(12);
+    });
+    it("Will multiply two different numbers together", () => {
+      expect(calc.multiply(10, 2)).toBe(20);
+    });
+    it("Will handle decimals", () => {
+      expect(calc.multiply(12.5, 3.5)).toBeCloseTo(43.75);
+    });
+    it("Will handle negatives", () => {
+      expect(calc.multiply(-12.5, 3.5)).toBeCloseTo(-43.75);
+    });
+  });
 });
