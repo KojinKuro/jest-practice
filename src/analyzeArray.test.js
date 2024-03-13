@@ -11,4 +11,12 @@ describe("Analyze Array", () => {
   it("Take average of different array", () => {
     expect(analyzeArray(numbers2).average).toBeCloseTo(3.75);
   });
+
+  it("Take min", () => {
+    expect(analyzeArray(numbers).min).toBe(1);
+  });
+
+  it("Take min of different array", () => {
+    expect(analyzeArray(numbers2).min).toBe(0);
+  });
 });
