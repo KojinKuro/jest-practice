@@ -4,9 +4,8 @@ export function caesarCipher(text, shiftValue) {
 
   const cipher = [];
   text.split("").forEach((char) => {
-    const index = alphabet.findIndex(
-      (searchChar) => searchChar === char.toLowerCase()
-    );
+    const charLower = char.toLowerCase();
+    const index = alphabet.findIndex((searchChar) => searchChar === charLower);
 
     let cipherChar = index !== -1 ? caesarAlphabet[index] : char;
     if (isUpperCase(char)) cipherChar = cipherChar.toUpperCase();
