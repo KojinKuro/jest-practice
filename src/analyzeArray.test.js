@@ -27,4 +27,12 @@ describe("Analyze Array", () => {
   it("Take max of different array", () => {
     expect(analyzeArray(numbers2).max).toBe(7);
   });
+
+  it("Finds length", () => {
+    expect(analyzeArray(numbers).length).toBe(6);
+  });
+
+  it("Finds length of different array", () => {
+    expect(analyzeArray(numbers2).length).toBe(4);
+  });
 });

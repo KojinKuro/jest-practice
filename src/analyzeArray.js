@@ -3,6 +3,7 @@ export function analyzeArray(array) {
     average: average(array),
     min: min(array),
     max: max(array),
+    length: length(array),
   };
 }
 
@@ -17,4 +18,8 @@ function min(array) {
 
 function max(array) {
   return Math.max(...array);
+}
+
+function length(array) {
+  return array.length;
 }
