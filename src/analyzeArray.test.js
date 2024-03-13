@@ -23,4 +23,8 @@ describe("Analyze Array", () => {
   it("Take max", () => {
     expect(analyzeArray(numbers).max).toBe(8);
   });
+
+  it("Take max of different array", () => {
+    expect(analyzeArray(numbers2).max).toBe(7);
+  });
 });
