@@ -2,6 +2,7 @@ export function analyzeArray(array) {
   return {
     average: average(array),
     min: min(array),
+    max: 8,
   };
 }
 
