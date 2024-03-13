@@ -25,6 +25,18 @@ describe("Caesar Cipher", () => {
     expect(caesarCipher(text, shiftValue)).toBe("J bn b cpz");
   });
 
+  it("Will handle negative shift values", () => {
+    const text = "Something evil";
+    const shiftValue = -1;
+    expect(caesarCipher(text, shiftValue)).toBe("Rnldsghmf duhk");
+  });
+
+  it("Will handle different negative shift values", () => {
+    const text = "Test this string";
+    const shiftValue = -21;
+    expect(caesarCipher(text, shiftValue)).toBe("Yjxy ymnx xywnsl");
+  });
+
   it("Will handle punctuation", () => {
     const text = "Do you know who I am? I am !!!!! &#";
     const shiftValue = 12;
